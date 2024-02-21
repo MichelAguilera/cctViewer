@@ -1,0 +1,16 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "cctViewer", "cctViewer\cctViewer.csproj", "{4E06CCBB-8F87-4DA2-98F1-27B91558557E}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4E06CCBB-8F87-4DA2-98F1-27B91558557E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4E06CCBB-8F87-4DA2-98F1-27B91558557E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4E06CCBB-8F87-4DA2-98F1-27B91558557E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4E06CCBB-8F87-4DA2-98F1-27B91558557E}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

@@ -1,0 +1,41 @@
+﻿@page "/weather"
+@attribute [StreamRendering]
+@* @inject S3Service S3Service *@
+
+<PageTitle>Weather</PageTitle>
+
+<h1>Videos</h1>
+
+<p>This component demonstrates showing data.</p>
+
+@if (videos == null)
+{
+    <p>
+        <em>Loading...</em>
+    </p>
+}
+else
+{
+    <ul>
+        @foreach (var video in videos)
+        {
+            <li>
+            <a href="/watch?videoUrl=@video.Url">@video.Title</a>
+            </li>
+        }
+    </ul>
+}
+
+@code {
+    private List<Video>? videos;
+
+    protected override async Task OnInitializedAsync()
+    {
+        videos = new List<Video>();
+        videos.Add(new Video { Title = "Test 1", Url = "Url1"} );
+        videos.Add(new Video { Title = "Test 2", Url = "Url2"} );
+        videos.Add(new Video { Title = "Test 3", Url = "Url3"} );
+        videos.Add(new Video { Title = "Test 4", Url = "Url4"} );
+        // videos = await S3Service.GetVideos();
+    }
+}
